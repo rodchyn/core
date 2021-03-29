@@ -35,7 +35,7 @@ final class EntrypointAction
     private $title;
     private $graphiqlEnabled;
 
-    public function __construct(SchemaBuilderInterface $schemaBuilder, ExecutorInterface $executor, \Twig_Environment $twig, in $debug = 0, bool $graphiqlEnabled = false, string $title = '')
+    public function __construct(SchemaBuilderInterface $schemaBuilder, ExecutorInterface $executor, \Twig_Environment $twig, int $debug = 0, bool $graphiqlEnabled = false, string $title = '')
     {
         $this->schemaBuilder = $schemaBuilder;
         $this->executor = $executor;
